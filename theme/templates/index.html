@@ -6,59 +6,63 @@
 <!--Main Navigation-->
 <header>
   <!-- Navbar -->
-  <nav
-    class="z-10 fixed top-0 flex-no-wrap flex w-full items-center justify-between bg-[#FBFBFB] py-2 shadow-md shadow-black/5 dark:bg-neutral-600 dark:shadow-black/10 lg:flex-wrap lg:justify-start lg:py-4">
-    <div class="flex w-full flex-wrap items-center justify-between px-3">
-      <!-- Hamburger button for mobile view -->
-      <button
-        class="block border-0 bg-transparent px-2 text-neutral-500 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200 lg:hidden"
-        type="button" data-te-collapse-init data-te-target="#navbarSupportedContent1"
-        aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation">
-        <!-- Hamburger icon -->
-        <span class="[&>svg]:w-7">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-7 w-7">
-            <path fill-rule="evenodd"
-              d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
-              clip-rule="evenodd" />
-          </svg>
+  <nav class=" border fixed top-0 z-10 w-full border-gray-700 px-2 sm:px-4 py-2.5 rounded bg-indigo-800 shadow">
+    <div class="container flex flex-wrap justify-center items-center mx-auto">
+      <a href="/" class="flex items-center mr-12 font-costarica text-4xl dark:text-white">
+        Nicolas <strong>
+        <span class="self-center text-4xl ml-2 font-bold whitespace-nowrap dark:text-white">
+           Nachid
         </span>
-      </button>
+        </strong>
+      </a>
   
-      <!-- Collapsible navigation container -->
-      <div class="!visible hidden flex-grow basis-[100%] items-center lg:!flex lg:basis-auto" id="navbarSupportedContent1"
-        data-te-collapse-item>
-        <!-- Logo -->
-        <a class="mb-4 ml-2 mr-5 mt-3 flex items-center text-neutral-900 hover:text-neutral-900 focus:text-neutral-900 dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400 lg:mb-0 lg:mt-0"
-          href="#">
-          <p>Nicolas Nachid .</p>
-        </a>
-        <!-- Left navigation links -->
-        <ul class="list-style-none mr-auto flex flex-col pl-0 lg:flex-row" data-te-navbar-nav-ref>
-          <li class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
-            <!-- Projects link -->
-            <a class="text-neutral-500 transition duration-200 hover:text-neutral-700 hover:ease-in-out focus:text-neutral-700 disabled:text-black/30 motion-reduce:transition-none dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-zinc-400"
-              href="#" data-te-nav-link-ref>Projects</a>
+      <div class="flex items-center">
+        <button id="menu-toggle" type="button"
+          class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 md:hidden">
+          <span class="sr-only">Open main menu</span>
+          <!-- Hamburger icon -->
+          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+          </svg>
+        </button>
+      </div>
+  
+      <div class="w-full md:block md:w-auto hidden " id="mobile-menu">
+        <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
+          <li>
+            <a href="#"
+              class="block text-lg py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+              aria-current="page">
+              Home
+            </a>
           </li>
-          <!-- About me link -->
-          <li class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
-            <a class="text-neutral-500 transition duration-200 hover:text-neutral-700 hover:ease-in-out focus:text-neutral-700 disabled:text-black/30 motion-reduce:transition-none dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
-              href="#" data-te-nav-link-ref>About me</a>
+          <li>
+            <a href="#"
+              class="block text-lg py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+              About
+            </a>
           </li>
-          <!-- Testimonials link -->
-          <li class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
-            <a class="text-neutral-500 transition duration-200 hover:text-neutral-700 hover:ease-in-out focus:text-neutral-700 disabled:text-black/30 motion-reduce:transition-none dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
-              href="#" data-te-nav-link-ref>Testimonials</a>
+          <li>
+            <a href="#"
+              class="block text-lg py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+              Services
+            </a>
           </li>
-          <!-- Contact link -->
-          <li class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
-            <a class="text-neutral-500 transition duration-200 hover:text-neutral-700 hover:ease-in-out focus:text-neutral-700 disabled:text-black/30 motion-reduce:transition-none dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
-              href="#" data-te-nav-link-ref>Contact</a>
+          <li>
+            <a href="#"
+              class="block text-lg py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+              Pricing
+            </a>
+          </li>
+          <li>
+            <a href="#"
+              class="block text-lg py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
+              Contact
+            </a>
           </li>
         </ul>
       </div>
   
-
-      
     </div>
   </nav>
   <!-- Navbar -->

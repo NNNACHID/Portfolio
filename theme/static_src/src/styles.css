@@ -1,3 +1,10 @@
+@font-face {
+     font-family: 'CostaRica';
+     src: url('/theme/static/fonts/costarica/CostaRica.otf') format('truetype'),
+            url('/theme/static/fonts/costarica/CostaRica.sfd') format('sfd');
+   }
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
