@@ -18,9 +18,9 @@
         <div class="header__right">
             <ul class="header__contact">
                 <li><span class="overhead"> Email </span><a href="mailto:aditya@adityacprtm.dev" target="_blank"
-                        rel="noopener" title="Email"> aditya@adityacprtm.dev <em class="font-icon icon-mail"></em></a>
+                        rel="noopener" title="Email"> n.n.nachid@protonmail.com <em class="font-icon icon-mail"></em></a>
                 </li>
-                <li><span class="overhead"> Location </span> Jakarta, ID <em class="font-icon icon-compass"></em></li>
+                <li><span class="overhead"> Location </span> Annemasse, ID <em class="font-icon icon-compass"></em></li>
             </ul>
             <ul class="header__contact">
                 <li><span class="overhead"> CV </span><a target="_blank" rel="noopener"
