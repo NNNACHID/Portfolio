@@ -1,6 +1,6 @@
 <template>
-    <aside class="col-12 col-md-12 col-lg-2">
-        <div class="sidebar box sticky-column">
+    <aside class="basis-1/3 bg-tertiary p-7">
+        <div class="">
             <ul class="nav">
                 <li class="nav__item"><a href="/" class=""><em class="icon-user"></em> About </a></li>
                 <li class="nav__item"><a href="/resume" class=""><em class="icon-file-text"></em> Resume </a></li>

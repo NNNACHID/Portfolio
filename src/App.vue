@@ -6,11 +6,11 @@ import Footer from './components/Footer.vue';
 </script>
 
 <template>
-  <div class="container mx-auto h-full max-h-full gap-y-7">
+  <div class="container mx-auto h-full max-h-full max-w-lg md:max-w-2/4 pt-32 px-5 md:pt-24">
     <Header />
-    <div class="row sticky-parent">
+    <div class="flex flex-row">
       <Navbar />
-      <div class="col-12 col-md-12 col-lg-10">
+      <div class="basis-2/3">
         <Content />
         <Footer />
       </div>
