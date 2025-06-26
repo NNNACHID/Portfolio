@@ -1,35 +1,45 @@
 <template>
-    <header class=" bg-finally p-7 mb-7 rounded-lg">
-        <div class="flex flex-col md:flex-row items-center justify-between">
-            <div class="flex flex-col mb-3 md:flex-row items-center">
-                <div class="m-3"><img
-                        src="../assets/photos/nicolas_check.png"
-                        alt="profile.jpg" width="150" height="150" class="header__photo-img"></div>
-                <div class="flex flex-col text-center">
-                    <h4 class="title titl--h4"> Nicolas <span class="weight--400"> Nachid </span></h4>
-                    <div class="status"> DevOps & Fullstack developer </div>
-                    <ul class="header__social">
-                        <li><a target="_blank" rel="noopener" href=""
-                                title="linkedIn"><em class="font-icon icon-linkedin1"></em></a></li>
-                        <li><a target="_blank" rel="noopener" href="" title="Github"><em
-                                    class="font-icon icon-github1"></em></a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="flex flex-col border-t-1 border-t-tertiary-900 md:flex-row border-t-transparent border-l-1 border-l-tertiary-900 p-12">
-                <ul class="mr-18 ">
-                    <li><span class="overhead"> Email: </span><a href="mailto:n.n.nachid@protonmail.com" target="_blank"
-                            rel="noopener" title="Email"> n.n.nachid@protonmail.com <em class="font-icon icon-mail"></em></a>
-                    </li>
-                    <li><span class="overhead"> Location: </span> Annemasse, France<em class="font-icon icon-compass"></em></li>
-                </ul>
-                <ul class="mr-18">
-                    <li><span class="overhead"> CV </span><a target="_blank" rel="noopener"
-                            href="#" title="CV"> Download <em
-                                class="font-icon icon-download"></em></a></li>
-                    <li><span class="overhead"> Status </span> 🍉 </li>
-                </ul>
+    <header class=" bg-indigo-700 text-white py-20">
+        <div class="container mx-auto px-4 flex flex-col items-center text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">{{ profile.name }}</h1>
+            <h2 class="text-2xl md:text-3xl mb-6 text-indigo-200">{{ profile.title }}</h2>
+            <p class="max-w-2xl mb-8 text-lg">{{ profile.summary }}</p>
+            <div class="flex space-x-4">
+                <a href="#contact"
+                    class="bg-white text-indigo-700 px-6 py-2 rounded-md font-medium hover:bg-indigo-100 transition-colors">
+                    Contact
+                </a>
+                <a href="#projects"
+                    class="border border-white px-6 py-2 rounded-md font-medium hover:bg-indigo-600 transition-colors">
+                    Voir mes projets
+                </a>
             </div>
         </div>
     </header>
 </template>
+
+<script lang="ts">
+import { defineComponent} from 'vue';
+
+export default defineComponent({
+    setup() {
+        const profile = {
+            name: 'Nicolas Nachid',
+            title: 'DevSecOps Engineer',
+            summary: 'Spécialiste en DevSecOps avec plus de 5 ans d\'expérience dans l\'intégration de la sécurité dans les pipelines CI/CD et l\'automatisation des infrastructures.',
+            about: 'Je suis un ingénieur DevSecOps passionné par l\'automatisation, la sécurité et l\'infrastructure as code. Mon objectif est d\'aider les organisations à construire des pipelines de livraison sécurisés et efficaces. Je suis spécialisé dans l\'intégration de la sécurité dès les premières étapes du développement logiciel.',
+            details: {
+                'Localisation': 'Annemasse, France',
+                'Expérience': '5+ ans',
+                'Disponibilité': 'Disponible',
+                'Email': 'nachid.pro@gmail.com'
+            }
+        }
+
+        return {
+        profile,
+        }
+    }
+
+})
+</script>

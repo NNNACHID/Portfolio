@@ -1,17 +1,20 @@
 @import "tailwindcss";
 
 @theme {
+  --font-display: "Satoshi", "sans-serif";
 
-    --font-display: "Satoshi", "sans-serif";
-
-    --color-primary: #000000;
-    --color-secondary: #222222;
-    --color-tertiary: #1DCD9F;
-    --color-finally: #169976;
+  --color-primary: #000000;
+  --color-secondary: #222222;
+  --color-tertiary: #1dcd9f;
+  --color-finally: #169976;
 }
 
-body{
-    min-height: 100vh;
-    min-width: 100vw;
-    color: white;
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  min-width: 100vw;
+  color: white;
 }
