@@ -1,0 +1,47 @@
+# Dependency directories
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Build files
+/dist
+/build
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Security files
+**/*.pem
+**/*.key
+**/*.crt
+**/*.p12
+**/*.p7b
+**/*.p7c
+**/*.p7s
+**/*.pfx
+**/*.sst
+**/*.stl
+**/*.stl-*
+**/*.stl.*
+**/*.stl-*
+**/*.stl.*
+
+# IDE specific files
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db

@@ -1,0 +1,8 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.22.1
+# ignores vulnerabilities until expiry date; change the expiry date to your needs
+disable: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch: {}
+# v1.0.0 - 2025-06-26
+# How to use: https://docs.snyk.io/fixing-and-prioritizing-issues/security-policy
